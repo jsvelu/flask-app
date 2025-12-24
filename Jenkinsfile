@@ -41,7 +41,7 @@ pipeline {
             steps {
                 sh '''
                 ssh ${FLASK_EC2} "mkdir -p ${APP_DIR}"
-                scp -r * ${FLASK_EC2}:${APP_DIR}
+                scp app.py requirements.txt Jenkinsfile -r templates ${FLASK_EC2}:${APP_DIR}
 
                 ssh ${FLASK_EC2} "
                   cd ${APP_DIR} &&
