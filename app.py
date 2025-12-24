@@ -30,4 +30,8 @@ def addtest():
 
 
 if __name__ == "__main__":
-	app.run(debug=True)
+	app.run(
+        host="0.0.0.0",   # VERY IMPORTANT
+        port=5000,
+        debug=False
+    )
