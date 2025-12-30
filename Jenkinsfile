@@ -3,7 +3,9 @@ pipeline {
 
     environment {
         APP_DIR   = "/home/ubuntu/flask-app"
-        FLASK_EC2 = "ubuntu@13.232.139.108"
+        VENV_DIR = "venv"
+        FLASK_PORT = "5000"
+        FLASK_EC2 = "ubuntu@3.110.168.167"
     }
 
     stages {
