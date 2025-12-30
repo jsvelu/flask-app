@@ -6,6 +6,7 @@ pipeline {
         VENV_DIR = "venv"
         FLASK_PORT = "5000"
         FLASK_EC2 = "ubuntu@3.110.168.167"
+        // FLASK_EC2 = "ubuntu@NEW IP"
     }
 
     stages {
