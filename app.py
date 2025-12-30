@@ -8,7 +8,7 @@ def home():
 
 @app.route("/about") 
 def about(): 
-	return "This is a simple Flask starter project!"
+	return "This is a simple Flask starter project! Testing!"
     
 @app.route("/contact") 
 def contact(): 
