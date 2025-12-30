@@ -14,7 +14,7 @@ def about():
 def contact(): 
 	return "<h1>FLASK DEMO FOR CI/CD</H1>"
 
-@app.route("/testform")
+@app.route("/testform", methods=["GET"])
 def testform():
     if request.method=='GET':
         return render_template('myform.html')
@@ -30,8 +30,9 @@ def addtest():
 
 
 if __name__ == "__main__":
-	app.run(
-        host="0.0.0.0",   # VERY IMPORTANT
+    app.run(
+        host="0.0.0.0",
         port=5000,
-        debug=False
+        debug=False,
+        use_reloader=False   # 🔴 VERY IMPORTANT
     )
