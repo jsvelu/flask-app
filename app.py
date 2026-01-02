@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home(): 
-	return "<h1>Hello, Flask! CI CD Pipiline With Dymamic Change!! IP Changed!!</h1>"
+	return "<center><h1>Hello, Flask! <H2>AUTOMATED</H2> CI CD Pipiline With Dymamic Change!! IP Changed!!</h1>"
 
 @app.route("/about") 
 def about(): 
